@@ -1,0 +1,29 @@
+/* Base Page Styling */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif; /* Clean Classic Font */
+}
+
+/* Classic Navy Blue Theme for Headers/Navbar */
+.bg-classic-navy {
+    background-color: #1a365d !important; /* Professional Navy Blue */
+}
+
+/* Custom Simple Buttons */
+.btn-classic {
+    background-color: #2b6cb0; /* Soft Classic Blue */
+    color: white;
+    border: none;
+    transition: 0.2s;
+}
+.btn-classic:hover {
+    background-color: #1a365d;
+    color: white;
+}
+
+/* Simple Classic Cards styling */
+.my-custom-card {
+    border-radius: 8px;
+    border: 1px solid #d2d6dc;
+    background-color: #ffffff;
+}

@@ -1,29 +1,65 @@
-/* Base Page Styling */
+/* Custom Glam Variables */
+:root {
+    --navy-glam: #0a1f44;      /* Deep, rich Navy */
+    --gold-glam: #d4af37;      /* Classic Gold Accent */
+    --rose-glam: #e0b0ff;      /* Glamorous Rose/Mauve accent */
+    --teal-glam: #008080;      /* Elegant Teal */
+    --bg-light: #fdfaf5;       /* Very subtle cream bg */
+}
+
 body {
-    background-color: #f4f6f9;
-    font-family: Arial, sans-serif; /* Clean Classic Font */
+    background-color: var(--bg-light);
+    font-family: 'Poppins', sans-serif; /* Cleaner, more aesthetic font */
+    color: #333;
 }
 
-/* Classic Navy Blue Theme for Headers/Navbar */
-.bg-classic-navy {
-    background-color: #1a365d !important; /* Professional Navy Blue */
+/* Updated Navbar - Deep Navy */
+.navbar-glam {
+    background-color: var(--navy-glam) !important;
+    border-bottom: 3px solid var(--gold-glam);
 }
 
-/* Custom Simple Buttons */
-.btn-classic {
-    background-color: #2b6cb0; /* Soft Classic Blue */
+/* Animation */
+@keyframes glamFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-glam {
+    animation: glamFadeIn 0.8s ease-out forwards;
+}
+
+/* The Glamorous Cards */
+.my-custom-card {
+    border-radius: 15px;
+    border: none;
+    background: #ffffff;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.my-custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(10, 31, 68, 0.1);
+}
+
+/* Glamorous Buttons */
+.btn-glam {
+    background: linear-gradient(45deg, var(--navy-glam), var(--teal-glam));
     color: white;
     border: none;
-    transition: 0.2s;
-}
-.btn-classic:hover {
-    background-color: #1a365d;
-    color: white;
+    border-radius: 25px; /* Rounded for glam */
+    padding: 10px 25px;
+    transition: 0.3s;
 }
 
-/* Simple Classic Cards styling */
-.my-custom-card {
-    border-radius: 8px;
-    border: 1px solid #d2d6dc;
-    background-color: #ffffff;
+.btn-glam:hover {
+    background: linear-gradient(45deg, var(--teal-glam), var(--navy-glam));
+    color: white;
+    transform: scale(1.05);
 }
+
+/* Text Highlights */
+.text-gold { color: var(--gold-glam); }
+.text-rose { color: var(--rose-glam); }
+.text-teal { color: var(--teal-glam); }

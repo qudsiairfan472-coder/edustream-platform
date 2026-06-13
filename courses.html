@@ -1,68 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduStream - Elegant Courses</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduStream - Professional Courses</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300..700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-glam sticky-top py-3">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-3" href="index.html">Edu<span class="text-rose">Stream</span></a>
-            <div class="collapse navbar-collapse" id="myNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-semibold" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container my-5 fade-in-glam">
-        <h2 class="text-center mb-5 fw-bold text-dark">Our <span class="text-teal">Professional</span> Catalog</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card my-custom-card h-100 border-0 shadow-sm p-2">
-                    <div class="card-body">
-                        <span class="badge bg-danger mb-2">Demand</span>
-                        <h5 class="card-title fw-bold text-dark">Web Engineering</h5>
-                        <p class="text-muted">Master single-page responsive web layouts using dynamic HTML5, CSS3, and standard workflow architectures.</p>
-                        <a href="#" class="btn btn-glam btn-sm w-100 mt-3">Enroll Module</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card my-custom-card h-100 border-0 shadow-sm p-2">
-                    <div class="card-body">
-                        <span class="badge bg-teal mb-2">Premium</span>
-                        <h5 class="card-title fw-bold text-dark">Artificial Intelligence</h5>
-                        <p class="text-muted">Dive deep into smart automation, functional data parameters, predictive logic, and model validation systems.</p>
-                        <a href="#" class="btn btn-glam btn-sm w-100 mt-3">Enroll Module</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card my-custom-card h-100 border-0 shadow-sm p-2">
-                    <div class="card-body">
-                        <span class="badge bg-rose mb-2">Standard</span>
-                        <h5 class="card-title fw-bold text-dark">Human Computer Interaction</h5>
-                        <p class="text-muted">Master robustness parameters, professional task analysis, Cognitive Walkthrough metrics, and perception logic.</p>
-                        <a href="#" class="btn btn-glam btn-sm w-100 mt-3">Enroll Module</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-glam sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-2" href="index.html">
+      <i class="fa-solid fa-graduation-cap text-gold me-2"></i>Edu<span class="text-rose">Stream</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="courseNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <footer class="text-white text-center py-4 mt-5" style="background-color: #051021;">
-        <p class="mb-0 text-muted">&copy; 2026 EduStream Platform. All Rights Reserved.</p>
-    </footer>
+<!-- ==================== COURSES GRID ==================== -->
+<div class="container my-5">
+  <h2 class="text-center mb-4 fw-bold">Our <span class="text-teal">Professional</span> Catalog <i class="fa-solid fa-book-open text-gold"></i></h2>
+  <div class="row g-4">
+    <!-- Course 1 -->
+    <div class="col-md-4">
+      <div class="card mv-custom-card h-100 border-0 shadow p-3">
+        <span class="badge bg-danger mb-2 w-50">🔥 High Demand</span>
+        <h5><i class="fa-brands fa-html5 text-teal"></i> Web Engineering</h5>
+        <p>Master responsive layouts, HTML5/CSS3, Bootstrap 5 & modern workflows.</p>
+        <button class="btn btn-glam btn-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal1">Enroll Now</button>
+      </div>
+    </div>
+    <!-- Course 2 -->
+    <div class="col-md-4">
+      <div class="card mv-custom-card h-100 border-0 shadow p-3">
+        <span class="badge bg-success mb-2 w-50">⭐ Premium</span>
+        <h5><i class="fa-solid fa-microchip"></i> Artificial Intelligence</h5>
+        <p>Deep learning, LLMs, computer vision & real-world model validation.</p>
+        <button class="btn btn-glam btn-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal2">Enroll Now</button>
+      </div>
+    </div>
+    <!-- Course 3 -->
+    <div class="col-md-4">
+      <div class="card mv-custom-card h-100 border-0 shadow p-3">
+        <span class="badge mb-2 w-50" style="background:#e0b0ff; color:#000;">✨ Standard</span>
+        <h5><i class="fa-solid fa-hand-peace"></i> HCI & UX Design</h5>
+        <p>Usability heuristics, cognitive walkthrough, user research metrics.</p>
+        <button class="btn btn-glam btn-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal3">Enroll Now</button>
+      </div>
+    </div>
+    <!-- Course 4 -->
+    <div class="col-md-4">
+      <div class="card mv-custom-card h-100 border-0 shadow p-3">
+        <span class="badge bg-info mb-2">📊 Data Science</span>
+        <h5>Data Analytics & BI</h5>
+        <p>Python, Pandas, Tableau, storytelling with data.</p>
+        <button class="btn btn-glam btn-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal1">Enroll Now</button>
+      </div>
+    </div>
+    <!-- Course 5 -->
+    <div class="col-md-4">
+      <div class="card mv-custom-card h-100 border-0 shadow p-3">
+        <span class="badge bg-warning mb-2">☁️ Cloud</span>
+        <h5>Cloud Computing (AWS)</h5>
+        <p>Architect solutions, deployment, serverless architecture.</p>
+        <button class="btn btn-glam btn-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal2">Enroll Now</button>
+      </div>
+    </div>
+    <!-- Course 6 -->
+    <div class="col-md-4">
+      <div class="card mv-custom-card h-100 border-0 shadow p-3">
+        <span class="badge bg-secondary mb-2">🎨 Creative</span>
+        <h5>UI/UX Masterclass</h5>
+        <p>Figma, prototyping, design systems, portfolio ready.</p>
+        <button class="btn btn-glam btn-sm w-100" data-bs-toggle="modal" data-bs-target="#enrollModal3">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ==================== MODALS (POPUP FORMS) ==================== -->
+<!-- Modal 1 -->
+<div class="modal fade" id="enrollModal1" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #0a1f44; color: white;">
+        <h5 class="modal-title"><i class="fa-solid fa-graduation-cap text-gold"></i> Enroll in Course</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Start your learning journey today! Full access to all modules, projects & certificate.</p>
+        <label class="form-label fw-bold">Full Name</label>
+        <input type="text" class="form-control mb-3" placeholder="Enter your name">
+        <label class="form-label fw-bold">Email Address</label>
+        <input type="email" class="form-control mb-3" placeholder="you@example.com">
+        <div class="alert alert-info">💰 Price: $129 - Limited time offer!</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-glam">Confirm Enrollment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="enrollModal2" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #0a1f44; color: white;">
+        <h5 class="modal-title"><i class="fa-solid fa-microchip text-gold"></i> AI Course Enrollment</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Master Artificial Intelligence with hands-on projects.</p>
+        <label class="form-label fw-bold">Full Name</label>
+        <input type="text" class="form-control mb-3" placeholder="Enter your name">
+        <label class="form-label fw-bold">Email Address</label>
+        <input type="email" class="form-control mb-3" placeholder="you@example.com">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-glam">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="enrollModal3" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #0a1f44; color: white;">
+        <h5 class="modal-title"><i class="fa-solid fa-hand-peace text-gold"></i> HCI Course Enrollment</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Learn Human-Computer Interaction & UX principles.</p>
+        <label class="form-label fw-bold">Full Name</label>
+        <input type="text" class="form-control mb-3" placeholder="Enter your name">
+        <label class="form-label fw-bold">Email Address</label>
+        <input type="email" class="form-control mb-3" placeholder="you@example.com">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-glam">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer-glam text-white text-center py-4 mt-5">
+  <p class="mb-0 opacity-75">&copy; 2026 EduStream Platform. All Rights Reserved.</p>
+  <div class="mt-2">
+    <i class="fa-brands fa-twitter mx-2"></i>
+    <i class="fa-brands fa-linkedin mx-2"></i>
+    <i class="fa-brands fa-instagram mx-2"></i>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

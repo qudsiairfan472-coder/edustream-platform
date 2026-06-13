@@ -1,65 +1,164 @@
-/* Custom Glam Variables */
+/* ===== ROOT VARIABLES (Enhanced) ===== */
 :root {
-    --navy-glam: #0a1f44;      /* Deep, rich Navy */
-    --gold-glam: #d4af37;      /* Classic Gold Accent */
-    --rose-glam: #e0b0ff;      /* Glamorous Rose/Mauve accent */
-    --teal-glam: #008080;      /* Elegant Teal */
-    --bg-light: #fdfaf5;       /* Very subtle cream bg */
+  --navy-glam: #0a1f44;
+  --gold-glam: #d4af37;
+  --rose-glam: #e0b0ff;
+  --teal-glam: #008080;
+  --bg-light: #fdfaf5;
+  --charcoal: #2c3e50;
+  --soft-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
+  --transition-smooth: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bg-light);
-    font-family: 'Poppins', sans-serif; /* Cleaner, more aesthetic font */
-    color: #333;
+  background-color: var(--bg-light);
+  font-family: 'Inter', sans-serif;
+  color: #1e2a3e;
+  scroll-behavior: smooth;
 }
 
-/* Updated Navbar - Deep Navy */
+h1, h2, h3, .display-3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ===== NAVBAR GLAM UPGRADE ===== */
 .navbar-glam {
-    background-color: var(--navy-glam) !important;
-    border-bottom: 3px solid var(--gold-glam);
+  background-color: var(--navy-glam) !important;
+  border-bottom: 3px solid var(--gold-glam);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: var(--transition-smooth);
 }
 
-/* Animation */
-@keyframes glamFadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.navbar-glam .nav-link {
+  color: rgba(255,255,240,0.85) !important;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: var(--transition-smooth);
+  border-radius: 30px;
+  padding: 8px 18px;
 }
 
-.fade-in-glam {
-    animation: glamFadeIn 0.8s ease-out forwards;
+.navbar-glam .nav-link:hover,
+.navbar-glam .nav-link.active {
+  color: var(--gold-glam) !important;
+  background: rgba(212, 175, 55, 0.12);
+  transform: translateY(-2px);
 }
 
-/* The Glamorous Cards */
-.my-custom-card {
-    border-radius: 15px;
-    border: none;
-    background: #ffffff;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+/* ===== HERO SECTION ===== */
+.hero-glam {
+  background: linear-gradient(135deg, rgba(10,31,68,0.85), rgba(0,128,128,0.8)), url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format');
+  background-size: cover;
+  background-position: center 30%;
 }
 
-.my-custom-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(10, 31, 68, 0.1);
+/* ===== CUSTOM CARDS ===== */
+.mv-custom-card {
+  border-radius: 24px;
+  border: none;
+  background: #ffffff;
+  transition: var(--transition-smooth);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+  overflow: hidden;
 }
 
-/* Glamorous Buttons */
+.mv-custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 35px -12px rgba(10,31,68,0.2);
+}
+
+/* ===== GLAM BUTTONS ===== */
 .btn-glam {
-    background: linear-gradient(45deg, var(--navy-glam), var(--teal-glam));
-    color: white;
-    border: none;
-    border-radius: 25px; /* Rounded for glam */
-    padding: 10px 25px;
-    transition: 0.3s;
+  background: linear-gradient(105deg, var(--navy-glam), var(--teal-glam));
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 28px;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  letter-spacing: 0.3px;
 }
 
 .btn-glam:hover {
-    background: linear-gradient(45deg, var(--teal-glam), var(--navy-glam));
-    color: white;
-    transform: scale(1.05);
+  background: linear-gradient(105deg, var(--teal-glam), var(--navy-glam));
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px -8px rgba(0,128,128,0.4);
+  color: white;
 }
 
-/* Text Highlights */
+.btn-outline-glam {
+  border: 2px solid var(--gold-glam);
+  background: transparent;
+  color: var(--navy-glam);
+  border-radius: 40px;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.btn-outline-glam:hover {
+  background: var(--gold-glam);
+  color: #0a1f44;
+  transform: scale(1.02);
+}
+
+/* ===== TEXT COLORS ===== */
 .text-gold { color: var(--gold-glam); }
 .text-rose { color: var(--rose-glam); }
 .text-teal { color: var(--teal-glam); }
+
+/* ===== BACKGROUNDS ===== */
+.bg-teal-soft { background-color: rgba(0,128,128,0.08); }
+
+.badge-glam {
+  background: linear-gradient(145deg, var(--teal-glam), #0e5e5e);
+  padding: 8px 16px;
+  border-radius: 40px;
+  font-weight: 500;
+}
+
+/* ===== FOOTER ===== */
+.footer-glam {
+  background-color: #051021;
+  border-top: 2px solid rgba(212,175,55,0.3);
+}
+
+/* ===== CAROUSEL ===== */
+.carousel-item img {
+  object-fit: cover;
+  height: 460px;
+  filter: brightness(0.75);
+}
+
+.carousel-caption {
+  background: linear-gradient(0deg, rgba(0,0,0,0.6), transparent);
+  border-radius: 20px;
+  bottom: 20px;
+}
+
+/* ===== FORM FOCUS ===== */
+.form-control:focus {
+  border-color: var(--teal-glam);
+  box-shadow: 0 0 0 0.25rem rgba(0,128,128,0.25);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes glamFadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-glam {
+  animation: glamFadeIn 0.7s ease forwards;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .carousel-item img { height: 280px; }
+  .display-3 { font-size: 2.2rem; }
+}

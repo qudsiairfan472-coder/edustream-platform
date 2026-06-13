@@ -1,77 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduStream - Glamorous Learning</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>EduStream | Glamorous Online Learning</title>
+  <!-- Bootstrap 5 CSS + Icons + Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-glam sticky-top py-3">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-3" href="index.html"><i class="fa-solid fa-graduation-cap text-gold me-2"></i>Edu<span class="text-rose">Stream</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="myNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active fw-semibold" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="bg-dark text-white text-center py-5 position-relative" style="background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.9)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1470') center/cover;">
-        <div class="container py-5 fade-in-glam">
-            <h1 class="display-3 fw-bold">Master <span class="text-gold">New Skills</span> Elegantly</h1>
-            <p class="lead mb-4 max-w-xl mx-auto">Learn from global industry experts anytime, anywhere.</p>
-            <a href="courses.html" class="btn btn-glam btn-lg fw-bold px-4">Explore Catalog <i class="fa-solid fa-arrow-right ms-2"></i></a>
-        </div>
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-glam sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-2" href="index.html">
+      <i class="fa-solid fa-graduation-cap text-gold me-2"></i>Edu<span class="text-rose">Stream</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-3 d-none d-lg-block">
+        <i class="fa-regular fa-bell text-gold"></i>
+      </div>
     </div>
+  </div>
+</nav>
 
-    <div class="container my-5 fade-in-glam">
-        <h2 class="text-center mb-5 fw-bold text-dark">Why <span class="text-teal">EduStream?</span></h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100 p-4 my-custom-card text-center border-0">
-                    <div class="card-body">
-                        <i class="fa-solid fa-laptop-code fa-3x text-teal mb-3"></i>
-                        <h5 class="fw-bold">Expert Instructors</h5>
-                        <p class="text-muted">Learn from professional developers with real experience.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 p-4 my-custom-card text-center border-0">
-                    <div class="card-body">
-                        <i class="fa-solid fa-clock fa-3x text-rose mb-3"></i>
-                        <h5 class="fw-bold">Flexible Timing</h5>
-                        <p class="text-muted">Study at your own comfortable pace anytime you want.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 p-4 my-custom-card text-center border-0">
-                    <div class="card-body">
-                        <i class="fa-solid fa-award fa-3x text-gold mb-3"></i>
-                        <h5 class="fw-bold">Verified Badges</h5>
-                        <p class="text-muted">Earn premium recognized certifications to boost your CV.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ==================== HERO CAROUSEL ==================== -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=2070" class="d-block w-100" alt="Learning">
+      <div class="carousel-caption d-flex flex-column h-100 justify-content-center">
+        <h1 class="display-3 fw-bold">Master <span class="text-gold">New Skills</span> Elegantly</h1>
+        <p class="lead fs-4">Learn from global industry experts — anytime, anywhere.</p>
+        <div><a href="courses.html" class="btn btn-glam btn-lg mt-2">Explore Catalog <i class="fa-solid fa-arrow-right ms-2"></i></a></div>
+      </div>
     </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070" class="d-block w-100" alt="AI Learning">
+      <div class="carousel-caption">
+        <h2 class="fw-bold">AI & Future Tech</h2>
+        <p>Cutting-edge modules with real-world projects</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070" class="d-block w-100" alt="Certification">
+      <div class="carousel-caption">
+        <h2 class="fw-bold">Earn Verified Badges</h2>
+        <p>Boost your career with premium certifications</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
 
-    <footer class="text-white text-center py-4 mt-5" style="background-color: #051021;">
-        <p class="mb-0 text-muted">&copy; 2026 EduStream Platform. All Rights Reserved.</p>
-    </footer>
+<!-- ==================== FEATURED CONTENT (CARDS) ==================== -->
+<div class="container my-5 fade-in-glam">
+  <h2 class="text-center mb-5 fw-bold">Why <span class="text-teal">EduStream?</span> <i class="fa-regular fa-star text-gold"></i></h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 p-4 mv-custom-card text-center border-0">
+        <div class="card-body">
+          <i class="fa-solid fa-laptop-code fa-3x text-teal mb-3"></i>
+          <h5 class="fw-bold">Expert Instructors</h5>
+          <p class="text-muted">Learn from professional developers, designers, and AI researchers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-4 mv-custom-card text-center border-0">
+        <div class="card-body">
+          <i class="fa-solid fa-clock fa-3x text-rose mb-3"></i>
+          <h5 class="fw-bold">Flexible Timing</h5>
+          <p class="text-muted">Self-paced learning with 24/7 access to premium content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-4 mv-custom-card text-center border-0">
+        <div class="card-body">
+          <i class="fa-solid fa-award fa-3x text-gold mb-3"></i>
+          <h5 class="fw-bold">Verified Badges</h5>
+          <p class="text-muted">Earn micro-credentials & shareable LinkedIn certificates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ==================== ALERT SECTION ==================== -->
+<div class="container my-4">
+  <div class="alert alert-warning border-0 rounded-4 d-flex align-items-center justify-content-between flex-wrap" style="background: linear-gradient(95deg, #fff3e0, #ffe6cf);">
+    <div><i class="fa-solid fa-bullhorn fa-xl text-gold me-3"></i> <strong>Flash Sale:</strong> Enroll in any two courses & get 30% off – limited slots!</div>
+    <a href="courses.html" class="btn btn-sm btn-glam mt-2 mt-sm-0">Grab Offer</a>
+  </div>
+</div>
+
+<!-- ==================== STATS SECTION ==================== -->
+<div class="container mb-5">
+  <div class="row align-items-center bg-teal-soft rounded-4 p-4">
+    <div class="col-md-8">
+      <h3 class="fw-bold">Join <span class="text-gold">15,000+</span> active learners worldwide</h3>
+      <p>From beginners to industry professionals, EduStream transforms careers.</p>
+      <div><span class="badge bg-info text-dark me-2">⭐ 4.9 Rating</span><span class="badge bg-dark">Trusted by 200+ companies</span></div>
+    </div>
+    <div class="col-md-4 text-center">
+      <i class="fa-solid fa-chalkboard-user fa-4x text-teal"></i>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer-glam text-white text-center py-4 mt-4">
+  <p class="mb-0 opacity-75">&copy; 2026 EduStream Platform — Elegant Learning Ecosystem. All Rights Reserved.</p>
+  <div class="mt-2">
+    <i class="fa-brands fa-twitter mx-2"></i>
+    <i class="fa-brands fa-linkedin mx-2"></i>
+    <i class="fa-brands fa-instagram mx-2"></i>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
